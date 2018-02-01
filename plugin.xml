@@ -11,6 +11,18 @@
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
+            <receiver android:name=".PhoneStateReceiver" android:enabled="true"
+                android:exported="true">
+               <intent-filter android:exported="true">
+                    <action android:name="android.intent.action.PHONE_STATE" />
+                    <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                    <action android:name="android.intent.action.BOOT_COMPLETED" />
+               </intent-filter>
+            </receiver>
+            <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+            <uses-permission android:name="android.permission.CALL_PHONE" />
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
         	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
         </config-file>
         <source-file src="src/android/CallState.java" target-dir="src/cordova/plugin/callstate" />
