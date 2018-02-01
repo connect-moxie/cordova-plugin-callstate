@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-callstate",
-  "version": "0.0.16",
+  "version": "0.0.18",
   "description": "Phone call trap to get state",
   "cordova": {
     "id": "cordova-plugin-callstate",
@@ -12,6 +12,14 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "",
+  "author": "connect-moxie",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/connect-moxie/cordova-plugin-callstate.git"
+  },
+  "homepage": "https://github.com/connect-moxie/cordova-plugin-callstate",
+  "bugs": {
+    "url": "https://github.com/connect-moxie/cordova-plugin-callstate/issues"
+  },
   "license": "ISC"
 }
