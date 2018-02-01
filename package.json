@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-callstate",
+  "version": "0.0.16",
+  "description": "Phone call trap to get state",
+  "cordova": {
+    "id": "cordova-plugin-callstate",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
